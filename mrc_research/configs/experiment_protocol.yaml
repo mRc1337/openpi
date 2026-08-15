@@ -1,0 +1,14 @@
+# Fill after the M0 pilot and freeze before final held-out testing.
+protocol_version: null
+split_manifest_sha256: null
+action_slot_map_sha256: null
+primary_metric: null
+primary_baseline: null
+minimum_effect: null
+noninferiority_margin: null
+training_seeds: null
+demo_subset_repeats: null
+rollouts_per_condition: null
+boundary_tolerance_seconds: null
+bootstrap_unit: null
+skill_swap_manifest_sha256: null

@@ -1,0 +1,41 @@
+# Structural defaults from model_design.md v0.2.
+# Null values must be frozen by the M0 dataset/robot audit before real training.
+model:
+  base_variant: pi05
+  segment_encoder:
+    width: 256
+    depth: 4
+    num_heads: 8
+    dropout_rate: 0.1
+    max_segment_steps: 128
+  skill:
+    fsq_levels: [3, 3, 3, 3]
+    residual_dim: 16
+    residual_dropout_rate: 0.2
+  subgoal:
+    embedding_dim: 256
+    visual_target_dim: 128
+    contact_target_dim: 7
+    num_proposals: 3
+    geometry_dim: null
+  executor:
+    pi_action_dim: 32
+    action_horizon: null
+    native_action_slots: null
+    enable_skill_adarms: false
+  timing:
+    skill_rate_hz: 10.0
+    control_rate_hz: null
+    min_skill_seconds: null
+    max_skill_seconds: null
+    execute_prefix_steps: null
+
+training:
+  stage: 1
+  condition_curriculum: [0.0, 0.5, 1.0]
+  freeze_tokenizer_in_stage4: true
+  freeze_vlm_prefix_in_stage4_warmup: true
+
+evaluation:
+  demo_budgets: [1, 5, 10, 20, 50]
+  prior_only_rollout: true
