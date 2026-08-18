@@ -2,6 +2,9 @@
 
 This example runs the LIBERO benchmark: https://github.com/Lifelong-Robot-Learning/LIBERO
 
+For the zxw-local, end-to-end pi0.5 fine-tuning reproduction (including personal-storage paths, training, and full
+evaluation), see [`docs/pi05_libero_finetune_zxw.md`](../../docs/pi05_libero_finetune_zxw.md).
+
 Note: When updating requirements.txt in this directory, there is an additional flag `--extra-index-url https://download.pytorch.org/whl/cu113` that must be added to the `uv pip compile` command.
 
 This example requires git submodules to be initialized. Don't forget to run:

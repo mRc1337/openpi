@@ -1,0 +1,5 @@
+benchmark_root: /home/pai/zxw/openpi/third_party/libero/libero/libero
+bddl_files: /home/pai/zxw/openpi/third_party/libero/libero/libero/bddl_files
+init_states: /home/pai/zxw/openpi/third_party/libero/libero/libero/init_files
+datasets: /home/pai/zxw/openpi/third_party/libero/libero/datasets
+assets: /home/pai/zxw/openpi/third_party/libero/libero/libero/assets
